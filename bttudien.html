@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="english">
+    <button onclick="trans()">Translate</button>
+    <br>
+    <input type="text" id="tiengviet">
+</body>
+<script>
+let input = [hello,dog,cat];
+let output = [chao,cho,meo];
+
+function trans() {
+    let a = document.getElementById("english").value;
+    let b = document.getElementById("tiengviet").innerHTML;
+    for (let i=0;i<input.length;i++){
+        if (a == input[i]) {
+        b = output[i];
+        }
+        return b;
+    }
+}
+</script>
+</html>
